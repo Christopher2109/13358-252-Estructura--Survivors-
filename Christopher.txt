@@ -1,0 +1,27 @@
+git clone https://github.com/usuario/repo-ejemplo.git
+cd repo-ejemplo
+
+mkdir -p session-1
+cd session-1
+
+cat <<EOF > christopher.txt
+Nombre: Christopher Thomas Pínzon Toro
+Edad: 19
+Programa académico: Ingeniería de sistemas
+Semestre actual: 4 semestre
+Algo extraño que te gusta hacer: saltar desde grandes altitudes al agua
+Color favorito: morado
+¿Tienes mascotas? (¿cuáles?): Sí, tengo dos gatos
+Intereses en el desarrollo de software (por ejemplo, desarrollo web, apps móviles, videojuegos, etc.): Interesado particularmente en desarrollo web
+EOF
+
+cd ..
+
+git pull origin main
+
+
+git add session-1/christopher.txt
+git commit -m "Agregar archivo de Christopher con información personal"
+
+
+git push origin main
